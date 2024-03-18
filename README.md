@@ -1,29 +1,31 @@
-# Create T3 App
+## intro
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+This is a simple webapp that gets the top 5 cryptocurrencies from the CoinGecko API, you are able to select the ones you want to follow and it will save them to local storage.
 
-## What's next? How do I make an app with this?
+## Technologies used
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+I've used Create T3 App to create the project, it uses React, TypeScript, and TailwindCSS. As it has a good and clean structure to start a project. Axios was used to make the requests to the API and Redux to manage the state of the app.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## How to run project locally
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+1. Install pnpm
 
-## Learn More
+```bash
+npm install -g pnpm
+```
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+2. Install dependencies
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+```bash
+pnpm install
+```
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+3. Run the app
 
-## How do I deploy this?
+```bash
+pnpm start
+```
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+4. Open your browser and go to `http://localhost:3000`
+
+! Don't refresh the page too many times, because the API has a limit of requests per minute. (although it saves to local storage there might be a time that the browser decides to clear it.)
